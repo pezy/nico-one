@@ -4,9 +4,9 @@
 {%- block document %}
 <div class="hentry" itemscope itemtype="http://schema.org/Article">
   <h1 class="entry-title" itemprop="name">{{post.title}}</h1>
-  {%- if post.meta.description %}
+  <!--{%- if post.meta.description %}
   <div class="entry-description" itemprop="description">{{post.meta.description}}</div>
-  {%- endif %}
+  {%- endif %}-->
   <div class="entry-content" itemprop="articleBody">{{post.html}}</div>
 
   <div class="entry-meta">
