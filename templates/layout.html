@@ -34,14 +34,19 @@
         <div class="brand">
           <a class="home" href="{{content_url('index.html')}}">{{config.sitename}}</a>
           {%- if config.tagline %}
-          - <span class="tagline">{{ config.tagline }}</span>
+          <p>===============> <span class="tagline">{{ config.tagline }}</span></p>
           {%- endif %}
+          <br/>
         </div>
         {%- if config.navigation %}
         <div class="menu" role="navigation">
+          {%- if config.wiki %}
+          <a href="{{config.wiki}}">WIKI</a>
+          {%- endif %}
           {%- for item in config.navigation %}
           <a href="{{content_url(item.link)}}">{{item.title}}</a>
           {%- endfor %}
+          <br/><br/>
         </div>
         {%- endif %}
       </div>
